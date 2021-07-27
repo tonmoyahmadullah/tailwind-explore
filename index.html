@@ -9,21 +9,51 @@
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
 </head>
 <body>
+    <!-------------------------------------------
+                Text Sizing section 
+    -------------------------------------------->
     <section>
         <h1 class="text-6xl bg-red-100 w-1/3">I have a hidden tail you didn't know that</h1>
         <h3 class="text-4xl">Now it will be exposed with Tailwind</h3>
         <h3 class="text-4xl font-thin text-green-600">Now it will be exposed with Tailwind</h3>
     </section>
+    <!--------------------------------------------
+         Container sizing and movement section 
+    ---------------------------------------------->
     <section class="container mx-auto">
-        <h1 class="text-4xl">This is a section</h1>
-        <div class=" text-6xl flex">
+        <h1 class="text-6xl">This is a section</h1>
+        <div class=" text-5xl flex justify-center">
             <div class="bg-green-300">
                 <h2>This is 1st box</h2>
             </div>
-            <div class="bg-red-300">
-                <h2 class="h-64 w-32">This is 2nd box</h2>
+            <div class="bg-red-300 h-64 w-72 flex justify-center items-center">
+                <h2 class="bg-purple-300 ">2</h2>
             </div>
         </div>
+    </section>
+    <!--------------------------------------------
+                 Grid PlayGround 
+    ---------------------------------------------->
+    <section class="bg-yellow-200">
+        <h2 class="text-5xl">This is Greedy Greedy Grid</h2>
+    <!----------- Grid Container ----------------->
+    <div class="grid grid-cols-4 gap-4">
+        <div class="bg-blue-200 p-10 col-span-2">1</div>
+        <div class="bg-blue-200 p-10">2</div>
+        <div class="bg-blue-200 p-10">3</div>
+        <div class="bg-blue-200 p-10 row-span-3">4</div>
+        <div class="bg-blue-200 p-10">5</div>
+        <div class="bg-blue-200 p-10">6</div>
+        <div class="bg-blue-200 p-10">7</div>
+        <div class="bg-blue-200 p-10">8</div>
+        <div class="bg-blue-200 p-10">9</div>
+        <div class="bg-blue-200 p-10">10</div>
+        <div class="bg-blue-200 p-10">11</div>
+        <div class="bg-blue-200 p-10">12</div>
+        <div class="bg-blue-200 p-10">13</div>
+        <div class="bg-blue-200 p-10">14</div>
+        <div class="bg-blue-200 p-10">15</div>
+    </div>
     </section>
 </body>
 </html>
